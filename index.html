@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Sneaker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap;"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <div id="main">
+      <!-- Банер -->
+      <div class="banner">
+        <img src="img/banner.jpg" alt="Banner Image" />
+        <div class="text-overlay">
+          <div class="celebrate-text">WE ARE NEVER DONE</div>
+          <button class="celebrate-button">Celebrate with us</button>
+        </div>
+      </div>
+
+      <!-- Картки товарів -->
+      <div class="products">
+        <div class="product-card">
+          <div class="new-label">NEW</div>
+          <img src="img/sneaker1.png" alt="Air Jordan 1 Mid" />
+          <div class="product-name">Air Jordan 1 Mid</div>
+          <div class="product-action">Light Smoke Grey</div>
+        </div>
+        <div class="product-card">
+          <div class="new-label">NEW</div>
+          <img src="img/sneaker2.png" alt="Air Max 200 SE" />
+          <div class="product-name">Air Max 200 SE</div>
+          <div class="product-action">Bright Crimson</div>
+        </div>
+      </div>
+    </div>
+    <div id="app">
+      <!-- Футер буде додано динамічно -->
+    </div>
+    <div id="modals">
+      <!-- Вікно реєстрації -->
+      <div id="registerModal" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="registerModal">&times;</span>
+          <h2>Реєстрація</h2>
+          <form>
+            <label for="registerEmail">Email</label>
+            <input type="email" id="registerEmail" name="email" required />
+            <label for="registerPassword">Пароль</label>
+            <input
+              type="password"
+              id="registerPassword"
+              name="password"
+              required
+            />
+            <button type="submit">Зареєструватись</button>
+          </form>
+        </div>
+      </div>
+      <!-- Вікно входу -->
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="loginModal">&times;</span>
+          <h2>Вхід</h2>
+          <form>
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" name="email" required />
+            <label for="loginPassword">Пароль</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="password"
+              required
+            />
+            <button type="submit">Увійти</button>
+          </form>
+          <p>
+            Немає облікового запису?
+            <a href="#" id="openRegisterModal">Зареєструватись</a>
+          </p>
+        </div>
+      </div>
+      <!-- Модальне вікно корзини товарів -->
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="cartModal">&times;</span>
+          <h2>Корзина товарів</h2>
+          <p>Тут будуть ваші товари...</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
